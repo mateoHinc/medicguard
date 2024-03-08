@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@300..700&family=Sofia+Sans:ital,wght@0,1..1000;1,1..1000&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Jura";
+}
+
+.header {
+    display: flex;
+    background-color: #9ab9bb;
+    height: 100px;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 30px;
+}
+
+.logOut {
+    background-color: #321A80;
+    width: 224px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.3);
+}
+
+.logOut:hover {
+    background-color: #271561;
+}
+
+.textSearch, .iconSearch {
+    border: 2px solid transparent;
+    border-image: linear-gradient(180deg, rgba(7,138,82,1) 31%, rgba(51,25,128,1) 87%);
+    border-image-slice: 1;
+}
+
+.searchIcon {
+    font-size: 24px;
+}
+
+.custom-dropdown .dropdown-toggle {
+    width: 159px; 
+    height: 40px; 
+    color: #000;
+    border: 2px solid transparent;
+    border-image: linear-gradient(180deg, rgba(7,138,82,1) 31%, rgba(51,25,128,1) 87%);
+    border-image-slice: 1;
+    background-color: white;
+    padding-right: 70px;
+  }
+
+.custom-dropdown .dropdown-toggle::after {
+    content: "";
+    border: solid #078a52;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 5px;
+    transform: rotate(44deg);
+    position: relative;
+    top: 1px;
+    left: 60px;
+}
+
+.ms-n5 {
+    margin-left: -40px;
+}
+
+.accordion {
+    margin: 60px;
+    width: 600px;
+}
+
+.accordion li {
+    list-style: none;
+    width: 100%;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 8px;
+    background: #e3edf7;
+    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.3);
+}
+
+.accordion li label {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.accordion .content {
+    color: #555;
+    padding: 0 10px;
+    line-height: 26px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s, padding 0.5s;
+}
+
+.accordion input[type="radio"]:checked + label + .content{
+    max-height: 400px;
+    padding: 10px 10px 20px;
+}
+
+.accordion input[type="radio"]:checked + label {
+    color: #078a52;
+}
+
+.txtAviso {
+    color: #078a52;
+    text-align: center;
+}
+
+.btnDardeBaja, .btnCancelar {
+    background-color: white;
+    color: #078a52;
+    width: 190px;
+    border-radius: 10px;
+    border-color: #078a52;
+}
+
+.btnDardeBaja:hover, .btnCancelar:hover {
+    background-color: white;
+    color: #078a52;
+    border-color: #078a52;
+}
+
+.btnEditarPerfil, .btnAceptarBaja {
+    background-color: #078a52;
+    color: white;
+    width: 190px;
+    border-radius: 10px;
+    border-color: #078a52;
+}
+
+.btnEditarPerfil:hover, .btnAceptarBaja:hover {
+    background-color: #078a52;
+    color: white;
+    border-color: #078a52;
+}
+
+.profile-img {
+    width: 80px; /* Ajusta el ancho según lo necesites */
+    height: 80px; /* Ajusta la altura según lo necesites */
+    border-radius: 50%; /* Para hacer que la imagen sea circular */
+    margin-right: 10px; /* Espacio entre la imagen y el texto */
+  }
+
+.image-container {
+    display: flex;
+    justify-content: center;
+}
+
+.imageProfile {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid gray;
+}
+
+.btnAddProfile {
+    position: absolute;
+    top: 45%;
+    background-color: #078a52;
+    width: 150px;
+    height: 45px;
+    border-radius: 10px;
+    border: none;
+    transform: translateY(-50%);
+}
+
+.btnAddProfile:hover {
+    background-color: #035e36;
+}
+
+.btnCancelarPerfil {
+    background-color: white;
+    color: #321A80;
+    width: 190px;
+    border-radius: 10px;
+    border-color: #321A80;
+}
+
+.btnCancelarPerfil:hover {
+    background-color: white;
+    border-color: #321A80;
+    color: #321A80;
+}
+
+.btnAgregarPerfil {
+    background-color: #321A80;
+    color: white;
+    width: 190px;
+    border-radius: 10px;
+    border-color: #321A80;
+}
+
+.btnAgregarPerfil:hover {
+    background-color: #1a0b4d;
+    border-color: #321A80;
+}

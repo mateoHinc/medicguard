@@ -1,0 +1,39 @@
+.modal, .overlay {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.overlay {
+    background: rgba(49, 49, 49, 0.8);
+    z-index: 10;
+}
+
+.modal-content {
+    background-color: rgba(255, 255, 255, 1);;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 11;
+}
+
+.modal-text {
+    color: rgba(7, 138, 82, 1); 
+    margin-bottom: 20px; /* Space between text and button */
+    text-align: center; /* Center the text */
+}
+
+.btncontainer button {
+    padding: 10px 30px;
+    background-color: rgba(7, 138, 82, 1); 
+    color: rgb(255, 255, 255); /* Text color of the button to match modal background */
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 20px;
+    margin: 30px;/* Spacing above the button */
+}

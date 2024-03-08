@@ -1,0 +1,173 @@
+:root{
+    font-size: 100%;
+    font-size: 16px;
+    line-height: 1.5;
+    --green: #078A52;
+    --forgot: #002D4E;
+    --main-color: #1E1E1E;
+}
+
+body {
+	padding: 0;
+	margin: 0;
+	font-family: 'Sofia Sans', sans-serif;
+    font-weight: 500;
+}
+h1{
+    font-size: 2.25rem;
+    font-weight: 700;
+}
+h2{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+h3{
+    font-size: 1rem;
+    font-weight: 700;
+}
+a{
+    text-decoration: none;
+    color: var(--main-color);
+}
+a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.small{
+    font-size: 80%;
+    text-align: center;
+}
+.split-screen{
+    display: flex;
+    flex-direction: column;
+}
+.left{
+    height: 200px;   
+}
+.left, .right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.left{
+    background: linear-gradient(180deg, #331880 0%, #078A52 100%);
+}
+.left .copy{
+    color: white;
+    text-align: center;
+}
+.left p{
+    font-weight: 400;
+}
+#welcome{
+    font-family: 'Jura', sans-serif;
+}
+.logo {
+    max-width: 200px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+  
+  .logoimg {
+    max-width: 100%;
+    height: auto;
+  }
+.right .copy{
+    color: black;
+    text-align: center;
+}
+.right .copy p{
+    margin: 1.5rem 0;
+    font-size: 0.875rem;
+}
+.right .copy h2{
+    font-size: 3rem;
+    font-weight: 700;
+    background: linear-gradient(180deg, #078A52 0%, #003053 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+.right form{
+    width: 328px;
+}
+.input-container input[type="text"],
+.input-container input[type="email"],
+.input-container input[type="password"] {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    border-color: rgba(42, 195, 130, 0.37);
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 1rem;
+    padding: 1em;
+    margin-bottom: 1.25rem;
+    font-size: 0.875rem;
+}
+.input-container input[type="password"],
+.input-container select {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    border-color: rgba(42, 195, 130, 0.37);
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 1rem;
+    font-size: 0.875rem;
+}
+
+.input-container select {
+    padding: 1em;
+    margin-bottom: 1.25rem;
+    background-color: rgba(42, 195, 130, 0.37);
+
+}
+input{
+    background-color: rgba(42, 195, 130, 0.37);
+}
+label{
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 0.75rem;
+}
+.input-container .password{
+    position: relative;
+}
+
+.signup-btn{
+    display: block;
+    color: white;
+    width: 100%;
+    background: var(--green);
+    font-weight: 700;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    text-transform: uppercase;   
+}
+
+.signup-btn:hover{
+   box-shadow: 0px 5px 15px var(--green);
+   cursor: pointer;
+}
+
+@media screen and (min-width: 900px) {
+    .split-screen {
+        flex-direction: row;
+        height: 100vh;
+    }
+
+    .left,
+    .right {
+        display: flex;
+        width: 50%;
+        height: auto;
+    }
+}
+@media (max-width: 768px) {
+    .logoimg {
+      width: 40%; 
+    }
+  }

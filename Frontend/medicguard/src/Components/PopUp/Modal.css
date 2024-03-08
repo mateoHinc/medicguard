@@ -1,0 +1,76 @@
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    font-family: 'Sofia Sans', sans-serif;
+    font-weight: 500;
+  }
+  
+  .modal-content {
+    display: flex;
+    background-color: rgba(240, 240, 245, 1);
+    height: 80%;
+    width: 50%; /* Adjust as needed */
+    max-width: 1024px; /* Adjust as needed */
+
+    overflow: hidden; /* Ensures the child divs do not overflow */
+  }
+  
+  .left-div, .right-div {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .left-div {
+    flex: 2; /* left-div takes up 2/3 of the space */
+  }
+  
+  .right-div {
+    flex: 1;
+  }
+
+  .modal-text {
+    margin-bottom: 20px;
+  }
+  
+  .image-container {
+    border: 1px solid rgba(0, 0, 0, 1); /* Or any color you prefer */
+    background-color: rgba(255, 255, 255, 1);
+  }
+  
+  .image-container img {
+    max-width: 100%; /* Ensure the image is responsive and doesn't overflow */
+    height: auto;
+  }
+  
+  .combo-section label {
+    margin-top: 10px;
+  }
+  
+  .modal-combobox {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+  }
+  
+  .buttons-container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 120px; /* Space above the buttons */
+  }
+  
+  .modal-button {
+    border-radius: 10px;
+    padding: 10px 30px;
+    background-color: rgba(7, 138, 82, 1);
+    color: white;
+    cursor: pointer;
+  }

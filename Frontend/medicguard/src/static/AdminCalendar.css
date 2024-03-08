@@ -1,0 +1,38 @@
+.react-calendar {
+    background-color: white;
+}
+
+
+.title2{
+    background-image: linear-gradient(#321B7F, #098654);
+    color: transparent;
+    background-clip:text;
+    font-size: 3em;
+    margin: 0.3em;
+    margin-left: 1em;
+}
+
+.above-calendar2{
+
+    font-family: "Sofia Sans", sans-serif;
+    margin-top: 1em;
+    margin-left: 3em;
+    font-weight: bold;
+}
+
+
+.adminCalendar{
+    height: 75vh;
+    width:  80vw;
+    margin: 0.5em;
+    margin-left: 2.3em;
+    background-color: white;
+    border: none;
+}
+
+.rbc-event{
+    background-color: #BEE8D6 !important;
+    color: #078A52 !important;
+    
+}
+
